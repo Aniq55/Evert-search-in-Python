@@ -129,7 +129,7 @@ def main():
     '''
 
 	
-	event_key = "r2T7x56SVzvb5vQP"
+	event_key = ""
 	event_location = "New York"
 	start_date = "20160911"
 	end_date = "20160912"
