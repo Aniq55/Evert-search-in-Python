@@ -1,15 +1,11 @@
 '''
 Author: < Johnny Hsu, aka. Yu Wei, Hsu>
 Date: 09/12/2016>
-
-Description:
-
 '''
 
 import requests
 import json
 import datetime
-
 
 def get_event(key, location, start_date, end_date, out_format):
 	'''
@@ -18,26 +14,25 @@ def get_event(key, location, start_date, end_date, out_format):
    	See the search box at http://eventful.com/events for an example interface.
     
  
-    Parameters:
-    key: a str that indicates Application key as provided by Eventful
+	Parameters:
+    		key: a str that indicates Application key as provided by Eventful
 
-    location: A location name to use in filtering the search results. 
-    		  Locations in the form "San Diego", "San Diego, TX", "London, United Kingdom", 
-    		  and "Calgary, Alberta, Canada" are accepted, as are postal codes ("92122") 
-    		  and venue IDs ("V0-001-000268633-5"). Common geocoordinate formats ("32.746682, -117.162741") are also accepted, 
-    		  but the "within" parameter is required in order to set a search radius. (optional)
-    		  see the location argument at http://api.eventful.com/docs/events/search
+    		location: A location name to use in filtering the search results. 
+	    		  Locations in the form "San Diego", "San Diego, TX", "London, United Kingdom", 
+	    		  and "Calgary, Alberta, Canada" are accepted, as are postal codes ("92122") 
+	    		  and venue IDs ("V0-001-000268633-5"). Common geocoordinate formats ("32.746682, -117.162741") are also accepted, 
+	    		  but the "within" parameter is required in order to set a search radius. (optional)
+	    		  see the location argument at http://api.eventful.com/docs/events/search
 
-   	start_date: a str that determines the start date for searching, format: "yyyymmdd", eg. "20160101"
-
-   	end_date: a str that determines the end date for searching, format: "yyyymmdd", eg. "20160101"
-   	out_format: a list determines the Output Parameters
-   				see the Output Parameters at http://api.eventful.com/docs/events/search    
+	   	start_date: a str that determines the start date for searching, format: "yyyymmdd", eg. "20160101"
+	   	end_date: a str that determines the end date for searching, format: "yyyymmdd", eg. "20160101"
+	   	out_format: a list determines the Output Parameters
+   			    see the Output Parameters at http://api.eventful.com/docs/events/search    
     
-    Return: 
-    data_lst: a list that includes all event based on location and date interval 
-
-    '''
+    	Return: 
+    		data_lst: a list that includes all event based on location and date interval 
+	'''
+	
 	data_lst = [] # output
 	start_year = int(start_date[0:4])
 	start_month = int(start_date[4:6])
@@ -114,21 +109,17 @@ def main():
    	This function handles event search. It performs the requested search, returning the results as an json file. 
    	Write the all returned result into csv file.
     
-    Variable Definition:
-  	event_key: a str that indicates Application key as provided by Eventful. Apply for key at http://api.eventful.com/keys
-  	event_location: a location to use in filtering the search result. eg. "New York"
-  	start_date: a str that determines the start date for searching, format: "yyyymmdd"
-	end_date: a str that determines the end date for searching, format: "yyyymmdd"
-    event_format: a list contains all Output Parameters
-    event_fname: output csv file name
+    	Variable Definition:
+	  	event_key: a str that indicates Application key as provided by Eventful. Apply for key at http://api.eventful.com/keys
+	  	event_location: a location to use in filtering the search result. eg. "New York"
+	  	start_date: a str that determines the start date for searching, format: "yyyymmdd"
+		end_date: a str that determines the end date for searching, format: "yyyymmdd"
+    		event_format: a list contains all Output Parameters
+    		event_fname: output csv file name
 
+    	Return: None
+    	'''
 
-    Return: None
-   
-
-    '''
-
-	
 	event_key = ""
 	event_location = "New York"
 	start_date = "20160911"
