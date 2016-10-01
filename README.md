@@ -13,7 +13,9 @@ In command prompt, run the following command propmt
 location: a string that determines the event location, such as New-York, each word is separated by hyphen.
 
 start_date: a string that determines the range you want to search, such as 20160101, which stands for Jan 01, 2016
+
 end_date: a string that determines the range you want to search , such as 20160131, which stands for  Jan 31, 2016
+
 
 for example, I'd like to search all events in New York City throwing in January 2016.
 
