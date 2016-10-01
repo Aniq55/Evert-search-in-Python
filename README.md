@@ -21,13 +21,13 @@ In command promt, type in the following command.
 
 > python event_search.py New-York 20160101 20160131
 
-You will get event.csv listing all events throiwng in January 2016.
+You will get event.csv listing all events throiwng in January 2016 as attached file events.csv.
 
 
 
 
 NOTICE:
-Because of api limitation, it can search the 250 events a day because of api limitation.
+Because of api limitation, it can return the 250 events a day (max) because of api limitation.
 
 I only choose the most popular events.
 
