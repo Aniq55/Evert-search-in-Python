@@ -1,4 +1,4 @@
-# eventful_evert_search 
+# Evert-Search---in-Python
 This code is based on Python 3.5 and I Use eventful API to search event and save it to csv file<br>
 This function handles event search and outputs the all result responsed by eventful api into csv<br>  file, which is named events.csv in the same directory as event_search.py<br>
 
