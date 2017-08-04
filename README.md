@@ -5,7 +5,7 @@ This function handles event search and outputs the all result responsed by event
 The fast way to run this event_search.py is using command prompt.<br>
 In command prompt, run the following command propmt in Windows<br>
 ```
-> python event_search.py location start_date end_date<br>
+> python event_search.py location start_date end_date
 ```
 location: a string that determines the event location, such as New-York, each word is separated by hyphen.<br>
 start_date: a string that determines the range you want to search, such as 20160101, which stands for Jan 01, 2016<br>
@@ -15,7 +15,7 @@ for example, I'd like to search all events in New York City throwing in January 
 
 In command promt, type in the following command.<br>
 ```
-> python event_search.py New-York 20160101 20160131<br>
+> python event_search.py New-York 20160101 20160131
 ```
 You will get event.csv listing all events throiwng in January 2016 as attached file events.csv.<br>
 <br>
